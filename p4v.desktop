@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=P4V
+Exec=/usr/bin/p4v
+Icon=p4v-icon
+Categories=Programming;Applications

@@ -10,3 +10,8 @@ Packer template example that creates Ubuntu 16.04 image for VirtualBox with bake
 ## Start ##
 
 On Mac/Ubuntu: `./packer build ubuntu-consul-template.json`. Few minutes later `output-ubuntu-consul` directory will contain VirtualBox OVF file, which can be imported into VirtualBox as new VM. Login and password for it is `ubuntu`.
+
+## Makefile ##
+
+For linux users: `make all-linux`
+Everyone else needs to install VirtualBox and Packer from the site above.
