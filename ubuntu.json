@@ -2,11 +2,11 @@
 	"builders": [{
 		"type": "virtualbox-iso",
 		"guest_os_type": "Ubuntu_64",
-		"iso_url": "http://releases.ubuntu.com/16.04/ubuntu-16.04.3-server-amd64.iso",
-		"iso_checksum": "a06cd926f5855d4f21fb4bc9978a35312f815fbda0d0ef7fdc846861f4fc4600",
+		"iso_url": "http://releases.ubuntu.com/16.04/ubuntu-16.04.3-desktop-amd64.iso",
+		"iso_checksum": "1384ac8f2c2a6479ba2a9cbe90a585618834560c477a699a4a7ebe7b5345ddc1",
 		"iso_checksum_type": "sha256",
 		"output_directory": "VM",
-		"disk_size": 15000,
+		"disk_size": 25000,
 		"headless": "true",
 		"http_directory": "http",
 		"boot_wait": "5s",
@@ -35,8 +35,8 @@
 		"ssh_password": "developer123",
 		"shutdown_command": "sudo systemctl poweroff",
 		"vboxmanage": [
-			["modifyvm", "{{.Name}}", "--memory", 512],
-			["modifyvm", "{{.Name}}", "--cpus", 1]
+			["modifyvm", "{{.Name}}", "--memory", 2000],
+			["modifyvm", "{{.Name}}", "--cpus", 2]
 		]
 	}],
 	"provisioners": [{
