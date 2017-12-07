@@ -9,9 +9,12 @@ Packer template that creates Ubuntu 16.04 image for VirtualBox
 
 ## Start ##
 
-On Mac/Ubuntu: `./packer build ubuntu-consul-template.json`. Few minutes later `VM` directory will contain VirtualBox OVF file, which can be imported into VirtualBox as new VM. Login and password for it is `developer` and `developer123`.
+On Mac: `./packer build ubuntu.json`. Few minutes later `VM` directory will contain VirtualBox OVF file, which can be imported into VirtualBox as new VM. Login and password for it is `developer` and `developer123`.
 
 ## Makefile ##
 
-For linux users: `make all-linux`
+For debian-based linux users: `make all-linux`
 Everyone else needs to install VirtualBox and Packer from the site above.
+
+For Windows and other linux distros you must download VirtualBox and Packer(which needs golang) to use this repo.
+Once you have the requirements just do `make all`.

@@ -1,4 +1,4 @@
-all-windows:
+all:
 	packer build ubuntu-consul-template.json
 
 clean:
@@ -10,8 +10,5 @@ all-linux:
 	echo "export PATH=$PATH:/usr/local/go/bin" > $HOME/.profile
 	source $HOME/.profile
 	go get github.com/hashicorp/packer
-	sudo apt-get install 
-	packer build ubuntu-consul-template.json
-
-install:
-	packer build ubuntu-consul-template.json
+	sudo apt-get install virutalbox
+	packer build ubuntu.json
